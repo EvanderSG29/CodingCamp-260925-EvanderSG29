@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Belajar</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Arial&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body class="font-[Arial] bg-white text-black">
+    <hr>
+  <div class="w-[1275px] h-[638px] mx-auto border border-gray-300">
+    <!-- Header -->
+    <div class="flex justify-between items-center border-b border-black px-6 py-2">
+      <div class="flex items-center">
+ 
+        <img src="Icon Revou.jpg" alt="Yellow circle logo with bold black letters REVO arranged in a modern style, horizontal lines forming the letter E, subtle ampersand in the background, clean and energetic design" class="w-14 h-14 ml-2 mr-8">
+      </div>
+    <div class="flex space-x-0">
+        <button class="border border-black px-4 py-1 rounded-none">Home</button>
+        <button class="border border-black px-4 py-1 rounded-none -ml-px">My Profile</button>
+        <button class="border border-black px-4 py-1 rounded-none -ml-px">Portfolio</button>
+        <button class="border border-black px-4 py-1 rounded-none -ml-px">Message Us</button>
+    </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="flex px-12 py-8 space-x-12">
+      <!-- Form -->
+      <div class="w-1/2">
+        <h2 class="text-2xl font-semibold mb-1">Form Belajar</h2>
+        <p class="mb-6">Ini adalah website latihan pertama</p>
+        <form class="space-y-4">
+          <div class="flex items-center">
+            <label class="w-32">Nama :</label>
+            <input type="text" placeholder="Nama" class="border border-black w-80 px-2 py-1">
+          </div>
+          <div class="flex items-center">
+            <label class="w-32">Tanggal Lahir :</label>
+            <input type="date" value="2023-04-02" class="border border-black w-80 px-2 py-1">
+          </div>
+          <div class="flex items-center">
+            <label class="w-32">Jenis Kelamin :</label>
+            <div class="flex items-center space-x-4">
+              <label class="flex items-center space-x-1">
+                <input type="radio" name="gender">
+                <span>Laki-Laki</span>
+              </label>
+              <label class="flex items-center space-x-1">
+                <input type="radio" name="gender">
+                <span>Perempuan</span>
+              </label>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <label class="w-32">Pesan :</label>
+            <textarea placeholder="Pesan" class="border border-black w-80 h-24 px-2 py-1"></textarea>
+          </div>
+          <div>
+            <button type="submit" class="w-96 border border-black bg-[#E5E5E5] py-1">Submit</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Table -->
+      <div class="w-1/2">
+        <table class="table-auto border border-gray-400 w-full text-sm">
+          <thead>
+            <tr class="bg-gray-200">
+              <th class="border border-gray-400 px-4 py-2">Nama</th>
+              <th class="border border-gray-400 px-4 py-2">Tanggal Lahir</th>
+              <th class="border border-gray-400 px-4 py-2">Jenis Kelamin</th>
+              <th class="border border-gray-400 px-4 py-2">Pesan</th>
+              <th class="border border-gray-400 px-4 py-2">Profile</th>
+              <th class="border border-gray-400 px-4 py-2">Delete</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-gray-400 px-4 py-2">Ada Lovelace</td>
+              <td class="border border-gray-400 px-4 py-2">December 10, 1815</td>
+              <td class="border border-gray-400 px-4 py-2">Perempuan</td>
+              <td class="border border-gray-400 px-4 py-2">Belajar Buat Website</td>
+              <td class="border border-gray-400 px-4 py-2 text-blue-600 underline">Klik Disini</td>
+              <td class="border border-gray-400 px-4 py-2 text-center"><i class="fas fa-trash"></i></td>
+            </tr>
+            <tr>
+              <td class="border border-gray-400 px-4 py-2">Grace Hopper</td>
+              <td class="border border-gray-400 px-4 py-2">December 9, 1906</td>
+              <td class="border border-gray-400 px-4 py-2">Perempuan</td>
+              <td class="border border-gray-400 px-4 py-2">Hello World</td>
+              <td class="border border-gray-400 px-4 py-2 text-blue-600 underline">Klik Disini</td>
+              <td class="border border-gray-400 px-4 py-2 text-center"><i class="fas fa-trash"></i></td>
+            </tr>
+            <tr>
+              <td class="border border-gray-400 px-4 py-2">Margaret Hamilton</td>
+              <td class="border border-gray-400 px-4 py-2">August 17, 1936</td>
+              <td class="border border-gray-400 px-4 py-2">Perempuan</td>
+              <td class="border border-gray-400 px-4 py-2">Test Dulu</td>
+              <td class="border border-gray-400 px-4 py-2 text-blue-600 underline">Klik Disini</td>
+              <td class="border border-gray-400 px-4 py-2 text-center"><i class="fas fa-trash"></i></td>
+            </tr>
+            <tr>
+              <td class="border border-gray-400 px-4 py-2">Joan Clarke</td>
+              <td class="border border-gray-400 px-4 py-2">June 24, 1917</td>
+              <td class="border border-gray-400 px-4 py-2">Laki-Laki</td>
+              <td class="border border-gray-400 px-4 py-2">Selalu Semangat</td>
+              <td class="border border-gray-400 px-4 py-2 text-blue-600 underline">Klik Disini</td>
+              <td class="border border-gray-400 px-4 py-2 text-center"><i class="fas fa-trash"></i></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="border-t border-black text-right px-6 py-2 text-sm">
+      Created By RevoU
+    </div>
+  </div>
+</body>
+</html>
+```
